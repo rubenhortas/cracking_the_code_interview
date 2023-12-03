@@ -5,7 +5,7 @@ import unittest
 from check_permutation import is_permutation_sorting, is_permutation, is_permutation_count
 
 
-class CheckPermutationTest(unittest.TestCase):
+class TestCheckPermutation(unittest.TestCase):
     def setUp(self):
         self.string1 = 'check permutations'
         self.data = [
