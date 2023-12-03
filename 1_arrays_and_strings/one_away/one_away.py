@@ -8,12 +8,15 @@ one edit (or zero edits) away.
 
 
 def one_away(str1: str, str2: str) -> bool:
-    if len(str2) == len(str1):
+    str1_length = len(str1)
+    str2_length = len(str2)
+
+    if str2_length == str1_length:
         return _hasOnlyOneReplaced(str1, str2)
-    elif len(str2) == len(str1) + 1:
-        return _hasOnlyOneInseredtOrRemoved(str1, str2)
-    elif len(str2) == len(str1) - 1:
-        return _hasOnlyOneInseredtOrRemoved(str2, str1)
+    elif str2_length == str1_length + 1:
+        return _hasOnlyOneInseredtOrRemoved(str1, str2, str1_length, str2_length)
+    elif str2_length == str1_length - 1:
+        return _hasOnlyOneInseredtOrRemoved(str2, str1, str2_length, str1_length)
     else:
         return False
 
@@ -31,11 +34,11 @@ def _hasOnlyOneReplaced(str1: str, str2: str) -> bool:
     return True
 
 
-def _hasOnlyOneInseredtOrRemoved(str1: str, str2: str) -> bool:
+def _hasOnlyOneInseredtOrRemoved(str1: str, str2: str, str1_length: int, str2_length: int) -> bool:
     index1 = 0
     index2 = 0
 
-    while index2 < len(str2) and index1 < len(str1):
+    while index2 < str2_length and index1 < str1_length:
         if str1[index1] != str2[index2]:
             if index1 != index2:
                 return False
