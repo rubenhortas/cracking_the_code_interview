@@ -19,14 +19,14 @@ def one_away(str1: str, str2: str) -> bool:
 
 
 def _hasOnlyOneReplaced(str1: str, str2: str) -> bool:
-    found_difference = False
+    has_difference = False
 
-    for i in range(len(str1)):
-        if str1[i] != str2[i]:
-            if found_difference:
+    for c1, c2 in zip(str1, str2):
+        if c1 != c2:
+            if has_difference:
                 return False
             else:
-                found_difference = True
+                has_difference = True
 
     return True
 
