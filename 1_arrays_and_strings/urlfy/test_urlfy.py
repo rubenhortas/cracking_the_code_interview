@@ -2,7 +2,8 @@
 
 import unittest
 
-from urlfy import get_url, get_url_pythonic
+import urlfy
+import urlfy_pythonic
 
 
 class TestUrlfy(unittest.TestCase):
@@ -13,14 +14,14 @@ class TestUrlfy(unittest.TestCase):
 
     def test_get_url(self):
         # We will use a list because, in python, strings are immutable
-        result = get_url(list(self.string), self.true_length)
+        result = urlfy.get_url(list(self.string), self.true_length)
 
         self.assertEqual(result, list(self.url))
         self.assertEqual(len(result), len(self.string))
 
     def test_get_url_pythonic(self):
         # We will use a list because, in python, strings are immutable
-        result = get_url_pythonic(list(self.string), self.true_length)
+        result = urlfy_pythonic.get_url(list(self.string), self.true_length)
 
         self.assertEqual(result, list(self.url))
         self.assertEqual(len(result), len(self.string))
