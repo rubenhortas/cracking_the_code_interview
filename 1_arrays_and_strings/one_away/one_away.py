@@ -12,7 +12,7 @@ def one_away(str1: str, str2: str) -> bool:
     str2_length = len(str2)
 
     if str2_length == str1_length:
-        return _hasOnlyOneReplaced(str1, str2)
+        return _has_only_one_replaced(str1, str2)
     elif str2_length == str1_length + 1:
         return _hasOnlyOneInseredtOrRemoved(str1, str2, str1_length, str2_length)
     elif str2_length == str1_length - 1:
@@ -21,7 +21,7 @@ def one_away(str1: str, str2: str) -> bool:
         return False
 
 
-def _hasOnlyOneReplaced(str1: str, str2: str) -> bool:
+def _has_only_one_replaced(str1: str, str2: str) -> bool:
     has_difference = False
 
     for c1, c2 in zip(str1, str2):
