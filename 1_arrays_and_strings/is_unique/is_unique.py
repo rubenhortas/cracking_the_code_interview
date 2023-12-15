@@ -1,12 +1,5 @@
 #!/usr/bin/env python3
 
-from collections import Counter
-
-
-# Is Unique: Implement an algorithm to determine if a string has all unique characters.
-# What if you cannot use additional data structures?
-
-
 def is_unique(string: str) -> bool:
     # Time complexity: O(n)
     # Auxiliary space: O(1)
@@ -22,35 +15,6 @@ def is_unique(string: str) -> bool:
             return False
 
         chars[ord(string[i])] = True
-
-    return True
-
-
-# What if you cannot use additional data structures?
-def is_unique_without_structures(string: str) -> bool:
-    # Time complexity: O(n^2)
-    # Auxiliary space: O(1)
-
-    for i in range(len(string)):
-        for j in range(i + 1, len(string)):
-            if string[i] == string[j]:
-                return False
-
-    return True
-
-
-def is_unique_set(string: str) -> bool:
-    # Pythonic way using set
-    return len(string) == len(set(string))
-
-
-def is_unique_counter(string: str) -> bool:
-    # Pythonic way using Counter
-    counter = Counter(string)
-
-    for char in counter:
-        if counter[char] > 1:
-            return False
 
     return True
 
