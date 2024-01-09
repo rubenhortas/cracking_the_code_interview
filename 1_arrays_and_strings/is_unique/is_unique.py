@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def is_unique(string: str) -> bool:
     # Time complexity: O(n)
     # Auxiliary space: O(1)

@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def is_permutation(str1: str, str2: str) -> bool:
     # Time complexity: O(n)
     # Auxiliary space: O(1)

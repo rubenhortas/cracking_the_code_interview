@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def is_permutation_of_palindrome(string: str) -> bool:
     bit_vector = _create_bit_vector(string.replace(' ', '').lower())
 

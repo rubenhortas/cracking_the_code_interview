@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 """
 There are three types of edits that can be performed on strings: insert a character,
 remove a character, or replace a character. Given two strings, write a function to check if they are
@@ -14,9 +12,9 @@ def one_away(str1: str, str2: str) -> bool:
     if str2_length == str1_length:
         return _has_only_one_replaced(str1, str2)
     elif str2_length == str1_length + 1:
-        return _hasOnlyOneInseredtOrRemoved(str1, str2, str1_length, str2_length)
+        return _has_only_one_inserted_or_removed(str1, str2, str1_length, str2_length)
     elif str2_length == str1_length - 1:
-        return _hasOnlyOneInseredtOrRemoved(str2, str1, str2_length, str1_length)
+        return _has_only_one_inserted_or_removed(str2, str1, str2_length, str1_length)
     else:
         return False
 
@@ -34,7 +32,7 @@ def _has_only_one_replaced(str1: str, str2: str) -> bool:
     return True
 
 
-def _hasOnlyOneInseredtOrRemoved(str1: str, str2: str, str1_length: int, str2_length: int) -> bool:
+def _has_only_one_inserted_or_removed(str1: str, str2: str, str1_length: int, str2_length: int) -> bool:
     index1 = 0
     index2 = 0
 
