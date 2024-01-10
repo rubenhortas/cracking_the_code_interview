@@ -1,7 +1,7 @@
+# Pythonic way using Counter
+
 from collections import Counter
 
-
-# Pythonic way using Counter
 
 def is_unique(string: str) -> bool:
     counter = Counter(string)

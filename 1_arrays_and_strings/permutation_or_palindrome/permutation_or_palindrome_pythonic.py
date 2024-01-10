@@ -1,3 +1,5 @@
+# Pythonic way using Counter
+
 from collections import Counter
 
 
