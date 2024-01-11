@@ -15,12 +15,3 @@ def is_unique(string: str) -> bool:
         chars[ord(string[i])] = True
 
     return True
-
-
-def is_unique_count(string: str) -> bool:
-    # Pythonic way using count
-    for char in string:
-        if string.count(char) > 1:
-            return False
-
-    return True
