@@ -19,11 +19,11 @@ def get_compressed_string(string: str) -> str:
         if current_char == next_char:
             current_char_count = current_char_count + 1
         else:
-            compressed_string_tmp.append(f'{current_char}{current_char_count}')
+            compressed_string_tmp.append(f"{current_char}{current_char_count}")
             current_char = next_char
             current_char_count = 1
 
-    compressed_string_tmp.append(f'{current_char}{current_char_count}')
+    compressed_string_tmp.append(f"{current_char}{current_char_count}")
     compressed_string = ''.join(compressed_string_tmp)
 
     if len(compressed_string) < len(string):
