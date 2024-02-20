@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def get_url(string: list, true_length: int) -> list:
     # Time complexity: O(n)
     # Auxiliary space: O(1)
