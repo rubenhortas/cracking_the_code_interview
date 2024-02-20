@@ -13,7 +13,7 @@ def get_compressed_string(string: str) -> str:
     current_char = string[0]
     current_char_count = 1
 
-    for i in range(0, len(string) - 1):
+    for i in range(len(string) - 1):
         next_char = string[i + 1]
 
         if current_char == next_char:
