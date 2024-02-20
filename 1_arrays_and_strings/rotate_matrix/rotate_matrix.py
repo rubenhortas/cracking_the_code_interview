@@ -9,7 +9,7 @@ def get_rotated_matrix(matrix: list) -> list | None:
     for column in range(columns):
         row_ = []
 
-        for row in range(rows - 1, -1, -1):
+        for row in reversed(range(rows)):
             row_.append(matrix[row][column])
 
         rotated_matrix.append(row_)
