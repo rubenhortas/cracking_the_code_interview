@@ -1,5 +1,3 @@
-#!/usr/bin/env python3
-
 def get_rotated_matrix(matrix: list) -> list:
     rotated_matrix = []
     rows = len(matrix)
