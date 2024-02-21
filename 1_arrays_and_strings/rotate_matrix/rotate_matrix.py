@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-# noinspection PyShadowingNames
-def get_rotated_matrix(matrix: list) -> list | None:
+def get_rotated_matrix(matrix: list) -> list:
     rotated_matrix = []
     rows = len(matrix)
     columns = len(matrix[0])
