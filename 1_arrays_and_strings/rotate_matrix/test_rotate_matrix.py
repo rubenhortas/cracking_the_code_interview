@@ -4,6 +4,7 @@ import unittest
 
 import rotate_matrix
 import rotate_matrix_pythonic
+import rotate_matrix_alternative
 
 from utils import print_matrix
 
@@ -60,6 +61,18 @@ class TestRotateMatrix(unittest.TestCase):
     def test_rotate_matrix_pythonic(self):
         for matrix, result in self.data:
             rotated_matrix = rotate_matrix_pythonic.get_rotated_matrix(matrix)
+            if matrix:
+                # print('Matrix:')
+                print_matrix(matrix)
+                # print('Rotated matrix:')
+                print_matrix(rotated_matrix)
+                # print('Expected result:')
+                print_matrix(result)
+            self.assertEqual(rotated_matrix, result)
+
+    def test_rotate_matrix_alternative(self):
+        for matrix, result in self.data:
+            rotated_matrix = rotate_matrix_alternative.get_rotated_matrix(matrix)
             if matrix:
                 # print('Matrix:')
                 print_matrix(matrix)
