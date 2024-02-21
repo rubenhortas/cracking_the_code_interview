@@ -49,11 +49,11 @@ class TestRotateMatrix(unittest.TestCase):
         for matrix, result in self.data:
             rotated_matrix = rotate_matrix.get_rotated_matrix(matrix)
             if matrix:
-                print('Matrix:')
+                # print('Matrix:')
                 print_matrix(matrix)
-                print('Rotated matrix:')
+                # print('Rotated matrix:')
                 print_matrix(rotated_matrix)
-                print('Expected result:')
+                # print('Expected result:')
                 print_matrix(result)
             self.assertEqual(rotated_matrix, result)
 
@@ -61,10 +61,10 @@ class TestRotateMatrix(unittest.TestCase):
         for matrix, result in self.data:
             rotated_matrix = rotate_matrix_pythonic.get_rotated_matrix(matrix)
             if matrix:
-                print('Matrix:')
+                # print('Matrix:')
                 print_matrix(matrix)
-                print('Rotated matrix:')
+                # print('Rotated matrix:')
                 print_matrix(rotated_matrix)
-                print('Expected result:')
+                # print('Expected result:')
                 print_matrix(result)
             self.assertEqual(rotated_matrix, result)
