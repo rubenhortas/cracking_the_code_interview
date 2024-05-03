@@ -16,9 +16,9 @@ class TestPermutationOfPalindrome(unittest.TestCase):
         ]
 
     def test_is_permutation_of_palindrome(self):
-        for string, result in self.data:
-            self.assertEqual(permutation_of_palindrome.is_permutation_of_palindrome(string), result)
+        for string, expected_result in self.data:
+            self.assertEqual(expected_result, permutation_of_palindrome.is_permutation_of_palindrome(string))
 
     def test_is_permutation_of_palindrome_pythonic(self):
-        for string, result in self.data:
-            self.assertEqual(permutation_or_palindrome_pythonic.is_permutation_of_palindrome(string), result)
+        for string, expected_result in self.data:
+            self.assertEqual(expected_result, permutation_or_palindrome_pythonic.is_permutation_of_palindrome(string))
