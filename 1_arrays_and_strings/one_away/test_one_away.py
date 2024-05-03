@@ -15,5 +15,5 @@ class TestOneAway(unittest.TestCase):
         ]
 
     def test_one_away(self):
-        for str1, str2, result in self.data:
-            self.assertEqual(one_away(str1, str2), result)
+        for str1, str2, expected_result in self.data:
+            self.assertEqual(expected_result, one_away(str1, str2))
