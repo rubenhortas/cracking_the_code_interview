@@ -15,9 +15,9 @@ class TestStringCompression(unittest.TestCase):
         ]
 
     def test_string_compression(self):
-        for string, result in self.data:
-            self.assertEqual(string_compression.get_compressed_string(string), result)
+        for string, expected_result in self.data:
+            self.assertEqual(expected_result, string_compression.get_compressed_string(string))
 
     def test_string_compression_pythonic(self):
-        for string, result in self.data:
-            self.assertEqual(string_compression_pythonic.get_compressed_string(string), result)
+        for string, expected_result in self.data:
+            self.assertEqual(expected_result, string_compression_pythonic.get_compressed_string(string))

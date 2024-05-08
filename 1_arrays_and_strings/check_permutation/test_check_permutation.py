@@ -3,8 +3,8 @@
 import unittest
 
 import check_permutation
-import check_permutation_sorting
 import check_permutation_count
+import check_permutation_sorting
 
 
 class TestCheckPermutation(unittest.TestCase):
@@ -17,13 +17,13 @@ class TestCheckPermutation(unittest.TestCase):
         ]
 
     def test_check_is_permutation(self):
-        for string, result in self.data:
-            self.assertEqual(check_permutation.is_permutation(self.string1, string), result)
+        for string, expected_result in self.data:
+            self.assertEqual(expected_result, check_permutation.is_permutation(self.string1, string))
 
     def test_is_permutation_sorting(self):
-        for string, result in self.data:
-            self.assertEqual(check_permutation_sorting.is_permutation(self.string1, string), result)
+        for string, expected_result in self.data:
+            self.assertEqual(expected_result, check_permutation_sorting.is_permutation(self.string1, string))
 
     def test_is_permutation_count(self):
-        for string, result in self.data:
-            self.assertEqual(check_permutation_count.is_permutation(self.string1, string), result)
+        for string, expected_result in self.data:
+            self.assertEqual(expected_result, check_permutation_count.is_permutation(self.string1, string))

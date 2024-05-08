@@ -59,19 +59,19 @@ class TestRotateMatrix(unittest.TestCase):
         ]
 
     def test_rotate_matrix(self):
-        for matrix, result in self.data:
+        for matrix, expected_result in self.data:
             rotated_matrix = rotate_matrix.get_rotated_matrix(matrix)
-            # _print_matrices(matrix, rotated_matrix, result)
-            self.assertEqual(rotated_matrix, result)
+            # _print_matrices(matrix, rotated_matrix, expected_result)
+            self.assertEqual(expected_result, rotated_matrix)
 
     def test_rotate_matrix_pythonic(self):
-        for matrix, result in self.data:
+        for matrix, expected_result in self.data:
             rotated_matrix = rotate_matrix_pythonic.get_rotated_matrix(matrix)
-            # _print_matrices(matrix, rotated_matrix, result)
-            self.assertEqual(rotated_matrix, result)
+            # _print_matrices(matrix, rotated_matrix, expected_result)
+            self.assertEqual(expected_result, rotated_matrix)
 
     def test_rotate_matrix_alternative(self):
-        for matrix, result in self.data:
+        for matrix, expected_result in self.data:
             rotated_matrix = rotate_matrix_alternative.get_rotated_matrix(matrix)
-            # _print_matrices(matrix, rotated_matrix, result)
-            self.assertEqual(rotated_matrix, result)
+            # _print_matrices(matrix, rotated_matrix, expected_result)
+            self.assertEqual(expected_result, rotated_matrix)
