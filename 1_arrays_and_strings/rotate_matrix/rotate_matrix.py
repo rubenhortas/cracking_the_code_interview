@@ -1,9 +1,9 @@
 def get_rotated_matrix(matrix: list) -> list:
     rotated_matrix = []
     rows = len(matrix)
-    columns = len(matrix[0])
+    n = len(matrix)
 
-    for column in range(columns):
+    for column in range(n):
         row_ = []
 
         for row in reversed(range(rows)):
