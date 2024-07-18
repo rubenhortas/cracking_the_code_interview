@@ -1,13 +1,11 @@
 #!/usr/bin/env python3
-import copy
 import unittest
 
 import rotate_matrix
-import rotate_matrix_pythonic
 import rotate_matrix_alternative
-import rotate_matrix_swap_index_by_index
 import rotate_matrix_double_swap
-
+import rotate_matrix_pythonic
+import rotate_matrix_swap_index_by_index
 from utils import print_matrix
 
 
