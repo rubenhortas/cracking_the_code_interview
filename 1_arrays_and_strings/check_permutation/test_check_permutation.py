@@ -2,9 +2,10 @@
 
 import unittest
 
-import check_permutation
 import check_permutation_count
 import check_permutation_sorting
+
+import check_permutation
 
 
 class TestCheckPermutation(unittest.TestCase):
