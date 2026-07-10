@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/cracking-the-code-interview.iml" filepath="$PROJECT_DIR$/.idea/cracking-the-code-interview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/cracking_the_code_interview.iml" filepath="$PROJECT_DIR$/.idea/cracking_the_code_interview.iml" />
     </modules>
   </component>
 </project>
