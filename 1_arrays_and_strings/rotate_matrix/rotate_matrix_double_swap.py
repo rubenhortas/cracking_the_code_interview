@@ -1,4 +1,4 @@
-def get_rotated_matrix(matrix: list):
+def get_rotated_matrix(matrix: list) -> list:
     n = len(matrix)
 
     for i in range(n):
