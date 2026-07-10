@@ -8,22 +8,28 @@ import check_permutation_sorting
 
 
 class TestCheckPermutation(unittest.TestCase):
-    def setUp(self):
-        self.string1 = 'check permutations'
+    def setUp(self) -> None:
+        self.string1 = "check permutations"
         self.data = [
-            ('permutations check', True),
-            ('p3rmut4t10n5 ch3ck', False),
-            ('permutations check ', False)
+            ("permutations check", True),
+            ("p3rmut4t10n5 ch3ck", False),
+            ("permutations check ", False),
         ]
 
-    def test_check_is_permutation(self):
+    def test_check_is_permutation(self) -> None:
         for string, expected_result in self.data:
             self.assertEqual(expected_result, check_permutation.is_permutation(self.string1, string))
 
-    def test_is_permutation_sorting(self):
+    def test_is_permutation_sorting(self) -> None:
         for string, expected_result in self.data:
-            self.assertEqual(expected_result, check_permutation_sorting.is_permutation(self.string1, string))
+            self.assertEqual(
+                expected_result,
+                check_permutation_sorting.is_permutation(self.string1, string),
+            )
 
-    def test_is_permutation_count(self):
+    def test_is_permutation_count(self) -> None:
         for string, expected_result in self.data:
-            self.assertEqual(expected_result, check_permutation_count.is_permutation(self.string1, string))
+            self.assertEqual(
+                expected_result,
+                check_permutation_count.is_permutation(self.string1, string),
+            )
