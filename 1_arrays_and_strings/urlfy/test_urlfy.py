@@ -2,24 +2,25 @@
 
 import unittest
 
-import urlfy
 import urlfy_pythonic
+
+import urlfy
 
 
 class TestUrlfy(unittest.TestCase):
-    def setUp(self):
+    def setUp(self) -> None:
         self.string = "Mr John Smith    "  # length = 17, "true" length = 13
         self.true_length = 13
         self.url = "Mr%20John%20Smith"
 
-    def test_get_url(self):
+    def test_get_url(self) -> None:
         # We will use a list because, in python, strings are immutable
         result = urlfy.get_url(list(self.string), self.true_length)
 
         self.assertEqual(result, list(self.url))
         self.assertEqual(len(result), len(self.string))
 
-    def test_get_url_pythonic(self):
+    def test_get_url_pythonic(self) -> None:
         # We will use a list because, in python, strings are immutable
         result = urlfy_pythonic.get_url(list(self.string), self.true_length)
 

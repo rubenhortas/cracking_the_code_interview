@@ -8,6 +8,7 @@
       <sourceFolder url="file://$MODULE_DIR$/1_arrays_and_strings/permutation_or_palindrome" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/1_arrays_and_strings/rotate_matrix" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/1_arrays_and_strings/string_compression" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/1_arrays_and_strings/urlfy" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
     <orderEntry type="jdk" jdkName="uv (cracking_the_code_interview)" jdkType="Python SDK" />
