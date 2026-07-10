@@ -22,7 +22,7 @@ def one_away(str1: str, str2: str) -> bool:
 def _has_only_one_replaced(str1: str, str2: str) -> bool:
     has_difference = False
 
-    for c1, c2 in zip(str1, str2):
+    for c1, c2 in zip(str1, str2, strict=True):
         if c1 != c2:
             if has_difference:
                 return False

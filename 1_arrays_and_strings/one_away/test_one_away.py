@@ -6,14 +6,9 @@ from one_away import one_away
 
 
 class TestOneAway(unittest.TestCase):
-    def setUp(self):
-        self.data = [
-            ('pale', 'ple', True),
-            ('pales', 'pale', True),
-            ('pale', 'bale', True),
-            ('pale', 'bae', False)
-        ]
+    def setUp(self) -> None:
+        self.data = [("pale", "ple", True), ("pales", "pale", True), ("pale", "bale", True), ("pale", "bae", False)]
 
-    def test_one_away(self):
+    def test_one_away(self) -> None:
         for str1, str2, expected_result in self.data:
             self.assertEqual(expected_result, one_away(str1, str2))
