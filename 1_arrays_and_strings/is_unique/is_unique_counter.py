@@ -1,4 +1,4 @@
-# Pythonic way using Counter
+# Pythonic way using counter
 
 from collections import Counter
 
@@ -6,8 +6,4 @@ from collections import Counter
 def is_unique(string: str) -> bool:
     counter = Counter(string)
 
-    for char in counter:
-        if counter[char] > 1:
-            return False
-
-    return True
+    return all(counter[char] <= 1 for char in counter)
