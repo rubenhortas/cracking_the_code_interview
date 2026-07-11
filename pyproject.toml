@@ -1,0 +1,4 @@
+[tool.basedpyright]
+reportUnusedCallResult = "none"
+reportAny = "none"
+reportGeneralTypeIssues = "none"
