@@ -1,11 +1,15 @@
 #!/usr/bin/env python3
 
 import unittest
+from typing import override
 
 from one_away import one_away
 
 
 class TestOneAway(unittest.TestCase):
+    data: list[tuple[str, str, bool]] = []  # noqa ruff012
+
+    @override
     def setUp(self) -> None:
         self.data = [("pale", "ple", True), ("pales", "pale", True), ("pale", "bale", True), ("pale", "bae", False)]
 

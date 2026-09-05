@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
+from typing import override
 
 import permutation_or_palindrome_pythonic
 
@@ -8,6 +9,9 @@ import permutation_or_palindrome
 
 
 class TestPermutationOfPalindrome(unittest.TestCase):
+    data: list[tuple[str, bool]] = []  # noqa ruff012
+
+    @override
     def setUp(self) -> None:
         self.data = [("Tact Coa", True), ("t a c t coapapa", True), ("Tact Coax", False), ("asdfadfadf", False)]
 

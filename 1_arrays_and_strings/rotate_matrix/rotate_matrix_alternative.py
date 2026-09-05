@@ -1,7 +1,10 @@
-def get_rotated_matrix(matrix: list) -> list:
+Matrix = list[list[str]]
+
+
+def get_rotated_matrix(matrix: Matrix) -> Matrix:
     n = len(matrix)
 
-    result = [[0] * n for i in range(n)]
+    result = [["0"] * n for _ in range(n)]
 
     for i, j in zip(range(n), reversed(range(n)), strict=True):
         for k in range(n):

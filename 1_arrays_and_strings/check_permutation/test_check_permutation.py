@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
+from typing import override
 
 import check_permutation_count
 import check_permutation_sorting
@@ -9,6 +10,10 @@ import check_permutation
 
 
 class TestCheckPermutation(unittest.TestCase):
+    string1: str = ""
+    data: list[tuple[str, bool]] = []  # noqa ruff012
+
+    @override
     def setUp(self) -> None:
         self.string1 = "check permutations"
         self.data = [

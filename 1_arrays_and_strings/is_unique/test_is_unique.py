@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 import unittest
+from typing import override
 
 import is_unique_count
 import is_unique_counter
@@ -11,6 +12,10 @@ import is_unique
 
 
 class TestIsUnique(unittest.TestCase):
+    unique: str = ""
+    not_unique: str = ""
+
+    @override
     def setUp(self) -> None:
         self.unique = "abcdefghij"
         self.not_unique = "abcdefabcd"

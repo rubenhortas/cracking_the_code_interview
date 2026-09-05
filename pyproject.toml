@@ -2,3 +2,4 @@
 reportUnusedCallResult = "none"
 reportAny = "none"
 reportGeneralTypeIssues = "none"
+reportImplicitRelativeImport = false

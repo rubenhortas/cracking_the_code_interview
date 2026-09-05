@@ -1,4 +1,7 @@
-def get_rotated_matrix(matrix: list[list[object]]) -> list[list[object]]:
+Matrix = list[list[str]]
+
+
+def get_rotated_matrix(matrix: Matrix) -> Matrix:
     rows = len(matrix)
     columns = len(matrix[0]) if rows > 0 else 0
 

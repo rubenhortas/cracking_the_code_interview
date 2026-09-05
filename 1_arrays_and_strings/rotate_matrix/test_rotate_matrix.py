@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
+
 import unittest
+from typing import override
 
 import rotate_matrix_alternative
 import rotate_matrix_double_swap
@@ -9,8 +11,10 @@ from utils import print_matrix
 
 import rotate_matrix
 
+Matrix = list[list[str]]
 
-def _print_matrices(matrix: list, rotated_matrix: list, expected_result: list) -> None:
+
+def _print_matrices(matrix: Matrix, rotated_matrix: Matrix, expected_result: Matrix) -> None:
     print("Matrix:")
     print_matrix(matrix)
 
@@ -22,6 +26,9 @@ def _print_matrices(matrix: list, rotated_matrix: list, expected_result: list) -
 
 
 class TestRotateMatrix(unittest.TestCase):
+    data: list[tuple[Matrix, Matrix]] = []  # noqa ruff012
+
+    @override
     def setUp(self) -> None:
         self.data = [
             ([["o", "o", "o"], ["*", "*", "*"], ["x", "x", "x"]], [["x", "*", "o"], ["x", "*", "o"], ["x", "*", "o"]]),
