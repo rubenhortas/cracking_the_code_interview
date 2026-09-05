@@ -1,5 +1,5 @@
-def is_permutation_of_palindrome(string: str) -> bool:
-    bit_vector = _create_bit_vector(string.replace(' ', '').lower())
+def is_permutation_or_palindrome(string: str) -> bool:
+    bit_vector = _create_bit_vector(string.replace(" ", "").lower())
 
     return bit_vector == 0 or _check_exactly_one_bit_set(bit_vector)
 
